@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/allan_bold"
+        android:text="CheckBox Example"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/android"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="14dp"
+        android:text="Android"
+        android:checked="true"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/swift"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/swift"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="23dp"
+        android:text="Swift"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/python"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/python"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="17dp"
+        android:text="Python"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/kotlin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/kotlin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="38dp"
+        android:text="Kotlin"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="161dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
